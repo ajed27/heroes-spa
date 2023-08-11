@@ -14,10 +14,10 @@ const CharactersByHero =({alter_ego, characters}:CharacterProps)=>{
 export const HeroCard = (hero: Hero) => {
     const heroImageUrl:string = `/src/assets/heroes/${hero.id}.jpg`
   return (
-    <div className="col">
+    <div className="col animate__animated animate__fadeIn">
         <div className="card h-100 d-inline-block">
             <div className="row no-gutters">
-                <div className="col-md-4">
+                <div className="col-4">
                     <img className="card-img m-1" src={heroImageUrl} alt={hero.superhero} />
                 </div>
                 <div className="col-8">
